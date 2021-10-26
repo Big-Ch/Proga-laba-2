@@ -1,0 +1,151 @@
+@startuml
+class com.company.Double_Team {
++ <<Create>> Double_Team()
+# boolean checkAccuracy(Pokemon,Pokemon)
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+class com.company.Kakuna {
++ <<Create>> Kakuna(String,int)
+}
+class com.company.Work_Up {
++ <<Create>> Work_Up()
+# boolean checkAccuracy(Pokemon,Pokemon)
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+class com.company.Flaaffy {
++ <<Create>> Flaaffy(String,int)
+}
+class com.company.Clefairy {
++ <<Create>> Clefairy(String,int)
+}
+class com.company.Light_Screen {
++ <<Create>> Light_Screen()
+# boolean checkAccuracy(Pokemon,Pokemon)
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+class com.company.Aerial_Ace {
++ <<Create>> Aerial_Ace()
+# boolean checkAccuracy(Pokemon,Pokemon)
+# String describe()
+}
+class com.company.Cleffa {
++ <<Create>> Cleffa(String,int)
+}
+class com.company.Horn_Attack {
++ <<Create>> Horn_Attack()
+# String describe()
+}
+class com.company.Low_Sweep {
++ <<Create>> Low_Sweep()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.Clefable {
++ <<Create>> Clefable(String,int)
+}
+class com.company.Beedrill {
++ <<Create>> Beedrill(String,int)
+}
+class com.company.Swagger {
++ <<Create>> Swagger()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.Focus_Blast {
++ <<Create>> Focus_Blast()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.Tail_Whip {
++ <<Create>> Tail_Whip()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.Silvally {
++ <<Create>> Silvally(String,int)
+}
+class com.company.Klefki {
++ <<Create>> Klefki(String,int)
+}
+class com.company.Ekans {
++ <<Create>> Ekans(String,int)
+}
+class com.company.Main {
++ {static} void main(String[])
+}
+class com.company.Snorlax {
++ <<Create>> Snorlax(String,int)
+}
+class com.company.Ice_Beam {
++ <<Create>> Ice_Beam()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.Blizzard {
++ <<Create>> Blizzard()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.Luvdisc {
++ <<Create>> Luvdisc(String,int)
+}
+class com.company.Crunch {
++ <<Create>> Crunch()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.Facade {
++ <<Create>> Facade()
+# double calcBaseDamage(Pokemon,Pokemon)
+# String describe()
+}
+class com.company.Headbutt {
++ <<Create>> Headbutt()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.Minior {
++ <<Create>> Minior(String,int)
+}
+class com.company.Dazzling_Gleam {
++ <<Create>> Dazzling_Gleam()
+# String describe()
+}
+class com.company.Seed_Bomb {
++ <<Create>> Seed_Bomb()
+# String describe()
+}
+
+
+com.company.StatusMove <|-- com.company.Double_Team
+com.company.Pokemon <|-- com.company.Kakuna
+com.company.StatusMove <|-- com.company.Work_Up
+com.company.Pokemon <|-- com.company.Flaaffy
+com.company.Cleffa <|-- com.company.Clefairy
+com.company.StatusMove <|-- com.company.Light_Screen
+com.company.PhysicalMove <|-- com.company.Aerial_Ace
+com.company.Pokemon <|-- com.company.Cleffa
+com.company.PhysicalMove <|-- com.company.Horn_Attack
+com.company.PhysicalMove <|-- com.company.Low_Sweep
+com.company.Cleffa <|-- com.company.Clefable
+com.company.Kakuna <|-- com.company.Beedrill
+com.company.StatusMove <|-- com.company.Swagger
+com.company.SpecialMove <|-- com.company.Focus_Blast
+com.company.StatusMove <|-- com.company.Tail_Whip
+com.company.Pokemon <|-- com.company.Silvally
+com.company.Pokemon <|-- com.company.Klefki
+com.company.Pokemon <|-- com.company.Ekans
+com.company.Pokemon <|-- com.company.Snorlax
+com.company.SpecialMove <|-- com.company.Ice_Beam
+com.company.SpecialMove <|-- com.company.Blizzard
+com.company.Pokemon <|-- com.company.Luvdisc
+com.company.PhysicalMove <|-- com.company.Crunch
+com.company.PhysicalMove <|-- com.company.Facade
+com.company.PhysicalMove <|-- com.company.Headbutt
+com.company.Pokemon <|-- com.company.Minior
+com.company.SpecialMove <|-- com.company.Dazzling_Gleam
+com.company.PhysicalMove <|-- com.company.Seed_Bomb
+@enduml
